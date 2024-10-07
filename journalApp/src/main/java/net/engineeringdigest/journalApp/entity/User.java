@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @Document(collection = "users")
 @Data
+@Builder
 public class User {
     @Id
     private ObjectId id;
